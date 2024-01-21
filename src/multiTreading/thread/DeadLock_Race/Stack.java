@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Stack {
 
+  public boolean exceptionOccured = false;
+
   private int arr[];
   private int head = -1;
   final int size;
@@ -37,8 +39,10 @@ public class Stack {
   }
 
   public int pop() {
-
     int res = Integer.MIN_VALUE;
+
+    try {
+
     if (!isEmpty()) {
       try {
         Thread.currentThread().sleep(1000);
@@ -51,10 +55,16 @@ public class Stack {
       System.err.println(Thread.currentThread().getName() + " cant pop head=" + head + "\n");
     }
     return res;
+
+    } catch (Exception e){
+      e.printStackTrace();
+      exceptionOccured = true;
+      return res;
+    }
   }
 
   public boolean push(int x) {
-   
+   try {
       if (!isFull()) {
         try {
           Thread.currentThread().sleep(1000);
@@ -68,6 +78,12 @@ public class Stack {
         System.err.println(Thread.currentThread().getName() + " cant add head=" + head + "\n");
         return false;
       }
+
+    } catch (Exception e){
+      e.printStackTrace();
+      exceptionOccured = true;
+      return false;
+    }
   }
 
   @Override

@@ -3,9 +3,11 @@ package multiTreading.thread.DeadLock_Race;
 public class RaceDemo {
 
     public static void main(String[] args) {
-        
+
         Stack stack = new Stack(3);
 
+        while (!stack.exceptionOccured) { //keep on pushing and popping until race condition occur
+         
         // putter thread
         Thread put = new Thread("PUTTER") {
             @Override
@@ -52,5 +54,22 @@ public class RaceDemo {
         pop1.start();
         put1.start();
        
+
+        try { // wait for all Threads to complete excecution until new threads are created
+            pop.join();
+            pop1.join();
+            put1.join();
+            put.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } 
+
+        // Check if the exception occurred during the operations
+        if (stack.exceptionOccured) {
+            System.out.println("Exception occurred. Stopping the loop.");
+            break;
+        }
+
+    }
     }
 }
