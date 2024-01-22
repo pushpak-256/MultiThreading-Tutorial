@@ -24,11 +24,8 @@ Welcome to the Java Multithreading Tutorial repository! This guide aims to help 
 - <a href="https://github.com/pushpak-256/MultiThreading-Tutorial/tree/master/src/multiTreading/thread/RaceCondition/RaceDemo.java" style="text-decoration: none; color: black;">Race scenario in Threads</a>
 - <a href="https://github.com/pushpak-256/MultiThreading-Tutorial/blob/master/src/multiTreading/thread/multiThreadingIn_blockingQueue/BlockingQueue.md" style="text-decoration: none; color: black;">Synchronization using BlockingQueue</a>
 - <a href="https://github.com/pushpak-256/MultiThreading-Tutorial/blob/master/src/multiTreading/thread/lifeCycle_ThreadStates/Join/join.md" style="text-decoration: none; color: black;">Thread join</a>
-- <a href="#" style="text-decoration: none; color: black;">Thread Pools</a> <!-- Update this link when available -->
-- <a href="#" style="text-decoration: none; color: black;">Concurrent Collections</a> <!-- Update this link when available -->
-- <a href="#" style="text-decoration: none; color: black;">Executors Framework</a> <!-- Update this link when available -->
-- <a href="#" style="text-decoration: none; color: black;">Thread Safety and Best Practices</a> <!-- Update this link when available -->
-- ... and much more!
+- <a href="https://github.com/pushpak-256/MultiThreading-Tutorial/tree/master/src/multiTreading/thread/Deadlocks/Deadlock.md" style="text-decoration: none; color: black;">Deadlocks in multiThreading</a> <!-- Update this link when available -->
+ ... and much more!
 
 
 
