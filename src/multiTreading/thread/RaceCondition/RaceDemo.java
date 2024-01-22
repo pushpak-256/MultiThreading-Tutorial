@@ -1,4 +1,4 @@
-package multiTreading.thread.DeadLock_Race;
+package multiTreading.thread.RaceCondition;
 
 public class RaceDemo {
 
